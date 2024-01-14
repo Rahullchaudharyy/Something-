@@ -22,6 +22,6 @@ document.addEventListener('keydown', function (e) {
     // Remove the 'playing' class after the animation duration
     setTimeout(() => {
         keyElement.classList.remove('playing');
-    }, ); // Adjust the timeout duration based on your transition duration
+    },300 ); // Adjust the timeout duration based on your transition duration
 });
 
