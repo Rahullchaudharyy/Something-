@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>day -9 js </title>
+</head>
+
+<body>
+
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+    <script>
+        const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+        function makeGreen() {
+            const p = document.querySelector('p');
+            p.style.color = '#BADA55';
+            p.style.fontSize = '50px';
+        }
+
+        // Regular
+        console.log('rahul')
+
+        // Interpolated
+        console.log(' rahul this is a %s string', '🔥')
+
+        // Styled
+        console.log('rahul %c this is the text', 'font-size: 50px ;color:yellow; background-color: red')
+
+        // warning!
+        console.warn("rahul You can't access this one")
+        
+        
+        // Error :|
+        
+        console.error("You can't access this one")
+        // Info
+        console.info("You can't access this one")
+
+        // Testing
+        console.assert( 1===4 , "sorry this is not a valid point")
+        
+        // clearing
+        // console.clear()
+        // counting
+        console.count('rahul')
+        console.count('rahul')
+        console.count('rahul')
+        console.count('rahul')
+        console.count('rahul')
+        console.count('rahul')
+
+
+        // timing
+        console.time('fetching data');
+    fetch('https://api.github.com/users/wesbos')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      });
+
+    console.table(dogs);
+
+    </script>
+</body>
+
+</html>
